@@ -1,0 +1,132 @@
+.App {
+  width: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background-color: #242424;
+}
+
+.main {
+  display: flex;
+  max-height: calc(100vh - 50px);
+}
+
+.left-container {
+  display: flex;
+  position: relative;
+  flex: 60%;
+  height: calc(100vh - 50px);
+}
+
+.right-container {
+  flex: 40%;
+  height: calc(100vh - 50px);
+  display: flex;
+  flex-direction: column;
+  background-color: #242424;
+  border-left: 3px solid #474747;
+}
+
+.right-container h4 {
+  margin-top: 0px;
+  margin-left: 10px;
+  font-size: 16px;
+  margin-bottom: 0px;
+}
+
+.input-box {
+  flex: 50%;
+  background-color: #242424;
+  position: relative;
+  overflow-y: hidden;
+  color: white;
+}
+
+.input-box textarea {
+  font-size: 16px;
+  border-top: none;
+  border-left: none;
+  border-bottom: 2px solid #474747;
+}
+
+.spinner-box {
+  flex: 50%;
+  background-color: #242424;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner-box img {
+  width: 200px
+}
+
+.output-box {
+  margin-left: 10px;
+  flex: 50%;
+  background-color: #242424;
+  position: relative;
+  overflow-y: auto;
+  color: white
+}
+
+.clear-btn {
+  position: absolute;
+  width: 80px;
+  height: 40px;
+  bottom: 14px;
+  right: 18px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #de3163;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-bottom: 10px;
+}
+
+.output-box pre {
+  font-size: 15px;
+  white-space: pre-wrap;
+} 
+
+h4 {
+  color: #de3163;
+}
+
+#code-input {
+  box-sizing: border-box;
+  width: 100%;
+  height : 100%;
+  resize: none;
+  background-color: #242424;
+  color: whitesmoke;
+  padding: 5px;
+}
+
+#code-input:focus {
+  outline: none;
+}
+
+.run-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 18px;
+  width: 80px;
+  height: 40px;
+  font-size: 16px;
+  color:white;
+  font-weight: bold;
+  background-color: #de3163;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-bottom: 10px
+}
+
+.run-btn:active {
+  background-color: #da184f;
+}
